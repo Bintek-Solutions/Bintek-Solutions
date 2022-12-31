@@ -1,0 +1,84 @@
+/* From @media (min-width: 1280px) and (max-width: 1600px) plus beyond (Default layout)*/
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("./fonts/Quicksand/static/Quicksand-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right,#7AB24A, #127480);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #7AB24A;
+}
+
+footer a:hover {
+    background: linear-gradient(to right,#7AB24A, #127480);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.link-hover:hover {
+    --tw-text-opacity: 1 !important;
+    color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
+}
+
+.mobi-menu:hover {
+    background: linear-gradient(to right,#7AB24A, #127480);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+}
+
+.deskie {
+    display: block;
+}
+
+.mobi {
+    display: none;
+}
+
+.deskie-footer {
+    display: block;
+}
+
+.mobi-footer {
+    display: none !important;
+}
+
+.bg-\[url\(\'\.\.\/img\/about-page-banner-3-01\.png\'\)\] {
+    background-image: url('../img/about-page-banner-3-01.png');
+}
+
+section.abt {
+    height: 420px;
+}
+
+.pg-ban-txt {
+    padding-left: 35px;
+    margin-top: 120px;
+}
+
+.sw-des {
+    display: block;
+}
+
+.sw-mob {
+    display: none;
+}
