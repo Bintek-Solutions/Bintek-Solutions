@@ -18,23 +18,15 @@
 </head>
 <body>
 
-<script type="text/javascript">
-    var submitted=false
-</script>
-
-<iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
-onload="if(submitted){window.location='about.html';}">
-</iframe>
-
 <!--Desktop nav and banner  -->
-<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font lg:w-full lg:h-screen bg-[url('../img/home-banner-x-final2-01.png')] deskie">
+  <section class="bg-no-repeat bg-center bg-top text-gray-600 body-font lg:w-full lg:h-screen bg-[url('../img/home-banner-x-final2-01.png')] deskie">
     <header class="text-bintek-green body-font">
       <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
         <a class="flex title-font font-medium items-end text-gray-900 -ml-8 p-0">
           <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
         </a>
         <nav class="w-1/2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mt-12">
-           <!-- Desktop nav menu -->
+          <!-- Desktop nav menu -->
           <ul class="hidden md:flex space-x-6">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -84,113 +76,58 @@ onload="if(submitted){window.location='about.html';}">
       </div>
     </header>
 
-    <table class="flex items-end mt-16"> 
-        <tr class="flex items-end">   
-            <!-- Tabs on banner -->
-            <td class="flex items-end">
-                <section class="flex items-end">
-                    <div class="flex flex-wrap ml-8" id="tabs-id">
-                        <div class="w-full">
-                        <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-                            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-profile')">
-                                    <i class="fas fa-space-shuttle text-base mr-1"></i>SELL A TV
-                                </a>
-                            </li>
-                            <!-- <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-settings')">
-                                    <i class="fas fa-cog text-base mr-1"></i>BUY A TV
-                                </a>
-                            </li> -->
-                        </ul>
-                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full shadow-lg rounded">
-                            <div class="px-4 py-5 flex-auto">
-                            <div class="tab-content tab-space">
-                                <div class="block" id="tab-profile">
-                                    
-                                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
-                                    method="post" target="hiddenConfirm" onsubmit="submitted=true">
-                                        <div class="relative mt-4 mb-8">
-                                            <select name="entry.1717568525=" id="tv-brand" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                                                <option value="brand">Select Brand</option>
-                                                <option value="samsung">Samsung</option>
-                                                <option value="sony">Sony</option>
-                                                <option value="lg">LG</option>
-                                                <option value="na">N/A</option>
-                                                <option value="xiaomi">Xiaomi</option>
-                                                <option value="infinix">Infinix</option>
-                                                <option value="itel">Itel</option>
-                                            </select>
-                                        </div>
-                                        <div class="relative mt-4 mb-8">
-                                            <select name="entry.1339658024=" id="tv-model" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                                                <option value="brand">Select Model</option>
-                                                <option value="32-sm-lg">32''TV Smart LG</option>
-                                                <option value="43-sm-lg">43''TV Smart LG</option>
-                                                <option value="55-sm-lg">55''TV Smart LG</option>  
-                                                <option value="32-sam-sm">32''TV Samsung Smart</option>
-                                                <option value="40-sam-sm">40''TV Samsung Smart</option>
-                                                <option value="43-sam-sm">43''TV Samsung Smart</option>
-                                                <option value="55-sam-sm">55''TV Samsung Smart</option> 
-                                                <option value="32-sony-sm">32''TV Sony Smart</option>
-                                                <option value="40-sony-sm">40''TV Sony Smart</option>
-                                                <option value="43-sony-sm">43''TV Sony Smart</option>
-                                                <option value="55-sony-sm">55''TV Sony Smart</option>                                             
-                                            </select>
-                                        </div>
-                                        <div class="relative flex justify-center">
-                                            <button class="flex items-center text-white bg-indigo-500 border-0 py px-4 mt mb-2 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Submit</button>
-                                        </div>    
-                                    </form>
-                                    <!-- <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> -->
-                                
-                                </div>
-                <!--            <div class="hidden" id="tab-settings">
-            
-                                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-                                    <div class="relative mb-4">
-                                        <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
-                                        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                                    </div>
-                                    <div class="relative mb-4">
-                                        <label for="email" class="leading-7 text-sm text-gray-600">Phone no</label>
-                                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                                    </div>
-                                    <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+    <!-- Text on banner -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 lg:pt-[180px] mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-bintek-blue">Pitchfork Kickstarter Taxidermy</h1>
+            <div class="h-1 w-20 bg-bintek-green rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+        </div>
+      </div>
+    </section>
+    <!-- End of text on banner -->
 
-                                </div> -->
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>  
-                </section>
-            </td>
-            <!-- End of tabs on banner -->
+    <!-- Banner features -->
+    <section class="text-gray-300 body-font -mt-8">
+      <div class="container px-5 mx-auto">
+        <div class="flex flex-wrap">
+          <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Shooting Stars</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+              <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">The Catalyzer</h2>
+              <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+              <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Neptune</h2>
+              <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+              <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Melanchole</h2>
+              <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of banner features -->
 
-            <!-- Banner right content -->
-            <td class="flex items-end">
-                <div class="container pl-12 pr-8 mx-auto flex items-end">
-                    <div class="flex flex-wrap w-full flex items-end">
-                        <div class="w-full mb-6 lg:mb-0">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-bintek-blue">Pitchfork Kickstarter Taxidermy</h1>
-                        <div class="h-1 w-20 bg-bintek-green rounded"></div>
-                        </div>
-                        <br>
-                        <p class="w-full mt-4 leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-                    </div>
-                </div>
-            </td>
-            <!-- End of banner right content -->
-
-        </tr>
-    </table> 
-</section>     
+  </section>
 <!-- End of desktop nav and banner  -->      
 
 <!-- Mobile nav and banner  -->
-<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-screen h-[308px] bg-[url('../img/home-banner-current-copy-mobile-01.png')] mobi">
+<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-screen h-screen bg-[url('../img/home-banner-current-copy-mobile-01.png')] mobi">
   <header class="text-bintek-green body-font">
     <div class="container mx-auto flex items-stretch flex-wrap flex-col flex-row">
 
@@ -254,70 +191,8 @@ onload="if(submitted){window.location='about.html';}">
   </section>
   <!-- End of text on banner -->
 
-</section>
-
-  <!-- Mobile buy/sell tabs -->
-  <section class="flex sm:hidden items-center shadow-xl">
-    <div class="flex flex-wrap ml-4 mr-2" id="tabs-id">
-        <div class="w-full">
-        <ul class="flex mb-0 list-none flex-wrap pt-4 pb-2 flex-row">
-            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-            <a class="text-xs font-bold uppercase px-2 py-2 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-profile')">
-                <i class="fas fa-space-shuttle text-base mr-1"></i>SELL A TV
-            </a>
-            </li>
-            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-            <a class="text-xs font-bold uppercase px-2 py-2 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-settings')">
-                <i class="fas fa-cog text-base mr-1"></i>BUY A TV
-            </a>
-            </li>
-        </ul>
-        <div class="relative flex flex-col min-w-0 break-words bg-gray-200 w-full mb-6 shadow-xl rounded">
-            <div class="px-4 py-5 flex-auto">
-            <div class="tab-content tab-space">
-                <div class="block" id="tab-profile">
-                    
-                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
-                    method="post" target="hiddenConfirm" onsubmit="submitted=true">                    
-                        <div class="relative mb-4">
-                            <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
-                            <input type="text" id="full-name" name="entry.2005620554" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        </div>
-                        <div class="relative mb-4">
-                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                            <input type="email" id="email" name="entry.1045781291" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        </div>
-                        <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Submit</button>
-                    </form>
-                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-                
-                </div>
-                <div class="hidden" id="tab-settings">
-
-                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-                    <div class="relative mb-4">
-                        <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <div class="relative mb-4">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Phone no</label>
-                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>  
-  </section>
-  <!-- End of  mobile buy/sell tabs -->
-
   <!-- Banner features -->
-  <!-- <section class="bg-gray-300 text-gray-600 pt-4 pb-16 body-font -mt-20 h-full">
+  <section class="bg-gray-300 text-gray-600 pt-4 pb-16 body-font -mt-20 h-full">
     <div class="container px-5 mx-auto">
       <div class="flex flex-wrap">
         <div class="xl:w-1/4 lg:w-1/2 md:w-full h-28 px-4 pt-4 mt-2 border-l border-white border-opacity-80 flex items-center">
@@ -346,48 +221,14 @@ onload="if(submitted){window.location='about.html';}">
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- End of banner features -->
 
-
+</section>
 <!-- End of mobile nav and banner  -->
 
 <div class="body-cont">
-
 <!-- Body section 1 -->
-<section class="bg-gray-300 text-gray-900 body-font">
-    <div class="container px-5 mx-auto">
-        <div class="flex flex-wrap">
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
-            <div>
-            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Shooting Stars</h2>
-            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
-            <div>
-            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">The Catalyzer</h2>
-            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
-            <div>
-            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Neptune</h2>
-            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
-            <div>
-            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Melanchole</h2>
-            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
-<!-- End of body section 1 -->
-
-<!-- Body section 2 -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 pt-16 mx-auto">
     <div class="flex flex-col text-center w-full mb-8">
@@ -396,9 +237,9 @@ onload="if(submitted){window.location='about.html';}">
     </div>    
   </div>
 </section>
-<!-- End of body section 2 -->
+<!-- End of body section 1 -->
 
-<!-- Body section 3 -->
+<!-- Body section 2 -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-8 mx-auto">
     <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
@@ -454,9 +295,9 @@ onload="if(submitted){window.location='about.html';}">
     </div>
   </div>
 </section>
-<!-- End of body section 3 -->
+<!-- End of body section 2 -->
 
-<!-- Body section 4 -->
+<!-- Body section 3 -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 pt-12 mx-auto flex flex-col">
     <div class="lg:w-4/6 mx-auto">
@@ -489,7 +330,7 @@ onload="if(submitted){window.location='about.html';}">
     </div>
   </div>
 </section>
-<!-- End of body section 4 -->
+<!-- End of body section 3 -->
 </div>
 
 <!-- Desktop footer -->
@@ -668,7 +509,6 @@ onload="if(submitted){window.location='about.html';}">
 </footer>
 <!-- End of mobile footer -->
 
-<script src="../js/main.js"></script>
 <script src="../js/nav-menu.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
