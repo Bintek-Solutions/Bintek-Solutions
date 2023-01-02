@@ -118,4 +118,8 @@
     .desk-cont {
         display: none !important;
     }
+
+    .mob-sell {
+        display: block !important;
+    }
 }

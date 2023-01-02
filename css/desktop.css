@@ -102,3 +102,7 @@ section.abt {
 .desk-cont {
     display: block !important;
 }
+
+.mob-sell {
+    display: none !important;
+}
