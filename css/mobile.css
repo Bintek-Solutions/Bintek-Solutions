@@ -83,6 +83,7 @@
     }
 
     .abt-mob {
+        display: block;
         height: 308px;
     }
 
@@ -96,5 +97,25 @@
     
     .sw-mob {
         display: block;
+    }
+
+    .des-form {
+        display: none !important;
+    }
+    
+    .mob-form {
+        display: block !important;
+    }
+
+    .mob-tv {
+        display: block !important;
+    }
+
+    .mobi-cont {
+        display: block !important;
+    }
+    
+    .desk-cont {
+        display: none !important;
     }
 }

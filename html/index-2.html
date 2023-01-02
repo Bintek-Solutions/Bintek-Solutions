@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
-    <link href="../output.css" rel="stylesheet">
-    <link href="../css/desktop.css" rel="stylesheet">
-    <link href="../css/mobile.css" rel="stylesheet">
-    <link href="../css/sm-tab.css" rel="stylesheet">
-    <link href="../css/lg-tab.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link href="css/desktop.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/sm-tab.css" rel="stylesheet">
+    <link href="css/lg-tab.css" rel="stylesheet">
 
     <style>
       [x-cloak] { display: none; }
@@ -27,11 +27,11 @@ onload="if(submitted){window.location='about.html';}">
 </iframe>
 
 <!--Desktop nav and banner  -->
-<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font lg:w-full bg-[#01060b] deskie">
+<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font lg:w-full lg:h-screen bg-[url('img/home-banner-x-final2-01.png')] deskie">
     <header class="text-bintek-green body-font">
       <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
         <a class="flex title-font font-medium items-end text-gray-900 -ml-8 p-0">
-          <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
+          <img src="img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
         </a>
         <nav class="w-1/2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mt-12">
            <!-- Desktop nav menu -->
@@ -40,7 +40,7 @@ onload="if(submitted){window.location='about.html';}">
             <li><a href="#">About</a></li>
             <li class="flex relative group">
               <a href="#" class="mr-1">Services</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
+              <img src="css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
               <!-- Submenu starts -->
               <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
                 <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">E-waste recycling</a></li>
@@ -50,7 +50,7 @@ onload="if(submitted){window.location='about.html';}">
             </li>
             <li class="flex relative group">
               <a href="#" class="mr-1">Products</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
+              <img src="css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
               <!-- Submenu starts -->
               <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
                 <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Batteries</a></li>
@@ -60,7 +60,7 @@ onload="if(submitted){window.location='about.html';}">
             </li>
             <li class="flex relative group">
               <a href="#" class="mr-1">Projects</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
+              <img src="css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
               <!-- Submenu starts -->
               <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
                 <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Project 1</a></li>
@@ -84,12 +84,109 @@ onload="if(submitted){window.location='about.html';}">
       </div>
     </header>
 
+    <table class="flex items-end"> 
+        <tr class="flex items-end">   
+            <!-- Tabs on banner -->
+            <td class="flex items-end md:ml-2">
+                <section class="flex items-end">
+                    <div class="flex flex-wrap ml-8" id="tabs-id">
+                        <div class="w-full">
+                        <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+                            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-profile')">
+                                    <i class="fas fa-space-shuttle text-base mr-1"></i>SELL A TV
+                                </a>
+                            </li>
+                            <!-- <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-settings')">
+                                    <i class="fas fa-cog text-base mr-1"></i>BUY A TV
+                                </a>
+                            </li> -->
+                        </ul>
+                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full shadow-lg rounded">
+                            <div class="px-4 py-5 flex-auto">
+                            <div class="tab-content tab-space">
+                                <div class="block" id="tab-profile">
+                                    
+                                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
+                                    method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                                        <div class="relative mb-4">
+                                          <div class="relative">
+                                            <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+                                            <input type="text" id="full-name" name="entry.1245089180" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                          </div>
+                                        </div>
+                                        <div class="relative mt-2 mb-4">
+                                          <div class="relative">
+                                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                            <input type="email" id="email" name="entry.1479085348" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                          </div>
+                                        </div>
+                                        <div class="relative mt-2 mb-4">
+                                          <div class="relative mb-4">
+                                            <label for="pno" class="leading-7 text-sm text-gray-600">Phone number</label>
+                                            <input type="text" id="pno" name="entry.531134056" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                          </div>
+                                        </div>
+                                        <div class="relative mt-2 mb-4">
+                                          <div class="relative mb-4">
+                                            <label for="feedback" class="leading-7 text-sm text-gray-600">Your feedback</label>
+                                            <input type="text" id="feedback" name="entry.604609754" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                          </div>
+                                        </div>
+                                        <div class="relative flex justify-center">
+                                            <button class="flex items-center text-white bg-indigo-500 border-0 py px-4 mt-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Submit</button>
+                                        </div>    
+                                    </form>
+                                    <!-- <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> -->
+                                
+                                </div>
+                <!--            <div class="hidden" id="tab-settings">
+            
+                                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                                    <div class="relative mb-4">
+                                        <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
+                                        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                    </div>
+                                    <div class="relative mb-4">
+                                        <label for="email" class="leading-7 text-sm text-gray-600">Phone no</label>
+                                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                    </div>
+                                    <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 
+                                </div> -->
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>  
+                </section>
+            </td>
+            <!-- End of tabs on banner -->
+
+            <!-- Banner right content -->
+            <td class="flex items-end">
+                <div class="container pl-12 pr-8 mx-auto flex items-end">
+                    <div class="flex flex-wrap w-full flex items-end">
+                        <div class="w-full mb-6 lg:mb-0">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-bintek-blue">Pitchfork Kickstarter Taxidermy</h1>
+                        <div class="h-1 w-20 bg-bintek-green rounded"></div>
+                        </div>
+                        <br>
+                        <p class="w-full mt-4 leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                    </div>
+                </div>
+            </td>
+            <!-- End of banner right content -->
+
+        </tr>
+    </table> 
 </section>     
 <!-- End of desktop nav and banner  -->      
 
 <!-- Mobile nav and banner  -->
-<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-screen bg-[#01060b] mobi">
+<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-screen h-[308px] bg-[url('img/home-banner-current-copy-mobile-01.png')] mobi">
   <header class="text-bintek-green body-font">
     <div class="container mx-auto flex items-stretch flex-wrap flex-col flex-row">
 
@@ -98,7 +195,7 @@ onload="if(submitted){window.location='about.html';}">
             <div class="flex items-center justify-between">
                 <div>
                   <a class="flex title-font font-medium items-end text-gray-900 -ml-8 p-0">
-                    <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-44 m-0 p-0">
+                    <img src="img/bintek-logo-trans.png" alt="Bintek logo" class="w-44 m-0 p-0">
                   </a>
                 </div>
     
@@ -140,191 +237,80 @@ onload="if(submitted){window.location='about.html';}">
   </header>
 
   <!-- Text on banner -->
-
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 mx-auto">
+      <div class="flex flex-wrap w-full mb-24">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Pitchfork Kickstarter Taxidermy</h1>
+          <div class="h-1 w-20 bg-bintek-green rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+      </div>
+    </div>
+  </section>
   <!-- End of text on banner -->
 
 </section>
 
-  <!-- CTA 1 -->
-  <section class="bg-gray-100 dark:bg-gray-800 lg:py-12 lg:flex lg:justify-center">
-    <div
-        class="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
-        <div class="lg:w-1/2">
-            <div class="h-64 bg-cover lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
-        </div>
-
-        <div class="bg-gray-200 sm:bg-white max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
-            <h2 class="text-base font-semibold text-gray-800 dark:text-white md:text-base">
-                Samsung 61 to 70 inches TV
-            </h2>
-
-            <p class="mt-4 text-gray-500 dark:text-gray-300">
-                Get Upto
-            </p>
-
-            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
-                <span class="text-bintek-green">Ksh. 39,840</span>
-            </h2>
-
-            <div class="inline-flex w-full mt-6 sm:w-auto">
-                <a href="#" class="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                    Get Exact Value <img src="https://img.icons8.com/material/24/7ab24a/long-arrow-right--v2.png" class="ml-2"/>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-  <!-- End of CTA 1 -->
-
-  <!-- Body section 2 -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 pt-8 pb-4 mx-auto">
-      <div class="flex flex-col text-center w-full mb-4">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Top Brands</h1>
-      </div>    
-    </div>
-  </section>
-  <!-- End of body section 2 -->
-
-  <!-- Top Brands -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 pb-4 mb-6 mx-auto">
-      <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+  <!-- Mobile buy/sell tabs -->
+  <section class="flex sm:hidden items-center shadow-xl">
+    <div class="flex flex-wrap ml-4 mr-2" id="tabs-id">
+        <div class="w-full">
+        <ul class="flex mb-0 list-none flex-wrap pt-4 pb-2 flex-row">
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <a class="text-xs font-bold uppercase px-2 py-2 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-profile')">
+                <i class="fas fa-space-shuttle text-base mr-1"></i>SELL A TV
+            </a>
+            </li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <a class="text-xs font-bold uppercase px-2 py-2 shadow-lg rounded block leading-normal text-bintek-blue bg-bintek-green" onclick="changeAtiveTab(event,'tab-settings')">
+                <i class="fas fa-cog text-base mr-1"></i>BUY A TV
+            </a>
+            </li>
+        </ul>
+        <div class="relative flex flex-col min-w-0 break-words bg-gray-200 w-full mb-6 shadow-xl rounded">
+            <div class="px-4 py-5 flex-auto">
+            <div class="tab-content tab-space">
+                <div class="block" id="tab-profile">
                     
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
+                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
+                    method="post" target="hiddenConfirm" onsubmit="submitted=true">                    
+                        <div class="relative mb-4">
+                            <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+                            <input type="text" id="full-name" name="entry.2005620554" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="entry.1045781291" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Submit</button>
+                    </form>
+                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                
                 </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End of Top Brands -->
+                <div class="hidden" id="tab-settings">
 
-  <!-- Body section 4 -->
-  <section class="bg-gray-200 text-gray-600 body-font">
-    <div class="container px-5 pt-8 pb-4 mx-auto">
-      <div class="flex flex-col text-center w-full">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Top Models</h1>
-      </div>    
-    </div>
-  </section>
-  <!-- End of body section 4 -->
+                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                    <div class="relative mb-4">
+                        <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="email" class="leading-7 text-sm text-gray-600">Phone no</label>
+                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
 
-  <!-- Top Models -->
-  <section class="bg-gray-200 text-gray-600 body-font">
-    <div class="container px-5 pb-6 mx-auto">
-      <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-                    
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
             </div>
-          </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
-            </div>
-          </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
-            
-                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
-            
-                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
-                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Samsung</h3>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div>  
   </section>
-  <!-- End of Top Models -->
+  <!-- End of  mobile buy/sell tabs -->
 
   <!-- Banner features -->
   <!-- <section class="bg-gray-300 text-gray-600 pt-4 pb-16 body-font -mt-20 h-full">
@@ -365,19 +351,140 @@ onload="if(submitted){window.location='about.html';}">
 <div class="body-cont">
 
 <!-- Body section 1 -->
-
+<section class="bg-gray-300 text-gray-900 body-font">
+    <div class="container px-5 mx-auto">
+        <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Shooting Stars</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">The Catalyzer</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Neptune</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-36 px-8 border-l border-white border-opacity-80 flex items-center">
+            <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Melanchole</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
 <!-- End of body section 1 -->
 
 <!-- Body section 2 -->
-
+<section class="text-gray-600 body-font">
+  <div class="container px-5 pt-16 mx-auto">
+    <div class="flex flex-col text-center w-full mb-8">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Master Cleanse Reliac Heirloom</h1>
+    </div>    
+  </div>
+</section>
 <!-- End of body section 2 -->
 
 <!-- Body section 3 -->
-
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto">
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <circle cx="6" cy="6" r="3"></circle>
+          <circle cx="6" cy="18" r="3"></circle>
+          <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- End of body section 3 -->
 
 <!-- Body section 4 -->
-
+<section class="text-gray-600 body-font">
+  <div class="container px-5 pt-12 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+          <a class="text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- End of body section 4 -->
 </div>
 
@@ -389,7 +496,7 @@ onload="if(submitted){window.location='about.html';}">
               <div class="px-6">
                   <div>
                     <a class="flex title-font font-medium items-end text-gray-900 mr-4 p-0">
-                      <img src="../img/bintek-logo-trans-footer.png" alt="Bintek logo" class="w-28 m-0 p-0">
+                      <img src="img/bintek-logo-trans-footer.png" alt="Bintek logo" class="w-28 m-0 p-0">
                     </a>
                   </div>
 
@@ -470,14 +577,14 @@ onload="if(submitted){window.location='about.html';}">
 <!-- End of desktop footer -->
 
 <!-- Mobile footer -->
-<footer class="bg-white dark:bg-gray-900 flex items-center text-center justify-items-center mobi-footer">
-  <div class="container px-6 pb-6 mx-auto">
+<footer class="bg-white dark:bg-gray-900 flex items-center text-center justify-items-center mt-4 mobi-footer">
+  <div class="container p-6 mx-auto">
       <div class="lg:flex">
           <div class="w-full lg:w-2/5">
               <div class="px-6">
                   <div>
                     <a class="flex title-font font-medium items-end text-gray-900 p-0">
-                      <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
+                      <img src="img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
                     </a>
                   </div>
 
@@ -557,8 +664,8 @@ onload="if(submitted){window.location='about.html';}">
 </footer>
 <!-- End of mobile footer -->
 
-<script src="../js/main.js"></script>
-<script src="../js/nav-menu.js"></script>
+<script src="js/main.js"></script>
+<script src="js/nav-menu.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 </body>

@@ -189,56 +189,39 @@
 
 <div class="body-cont">
 
-<!-- Body section 1 -->
-<section class="bg-gray-100 text-gray-600 body-font relative">
+<!-- Desktop google form -->
+<section class="flex items-center bg-gray-100 text-gray-600 body-font relative des-form">
     <div class="container px-12 py-12 mx-auto flex sm:flex-nowrap flex-wrap">
-      <div class="lg:w-2/3 md:w-1/2 bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden sm:mr-10 p-10 relative">
-        <h5 class="text-xl text-center card-title text-info bold">Tell us a few things about your device!</h5> 
+      <div class="lg:w-2/3 md:w-1/2 bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden p-10 relative">
 
-        <div class="text-left mt-4">
-            <p class="text-base text-left font-medium card-text">Does the Television switch on?</p>
-            <p class="text-gray-400 text-sm card-text text-success product-price">We currently only accept devices that switch on</p>
-            
-            <!-- Desktop radio -->
-            <button class="text-base text-bintek-green hover:text-gray-900 btn badge badge-pill badge-secondary mt-2 float-left" type="button" id="btnyes">
-                <input type="radio" id="ans1" class="text-bintek-green" name="fav_language" value="Yes">
-                <label for="html">Switches on</label>
-            </button>
-            <button class="lg:ml-8 lg:mt-2 text-base text-bintek-green hover:text-gray-900 btn badge badge-pill badge-secondary float-left" type="button"
-            data-action="add-to-cart" id="btnno">
-                <input type="radio" id="ans2" class="text-bintek-green" name="fav_language" value="No">
-                <label for="html" class="product-name">Doesn't switch on</label>
-            </button>
-            <!-- End of desktop radio -->
-
-        </div>
-    
-        <div class="text-left mt-16 lg:mt-10">
-            <p class="text-base text-left font-medium card-text">Does the Television switch on?</p>
-            <p class="text-gray-400 text-sm card-text text-success product-price">We currently only accept devices that switch on</p>
-            
-            <!-- Desktop radio -->
-            <button class="text-base text-bintek-green hover:text-gray-900 btn badge badge-pill badge-secondary mt-2 float-left" type="button" id="btnyes">
-                <input type="radio" id="ans1" class="text-bintek-green" name="fav_language" value="Yes">
-                <label for="html">Switches on</label>
-            </button>
-            <button class="lg:ml-8 lg:mt-2 text-base text-bintek-green hover:text-gray-900 btn badge badge-pill badge-secondary float-left" type="button"
-            data-action="add-to-cart" id="btnno">
-                <input type="radio" id="ans2" class="text-bintek-green" name="fav_language" value="No">
-                <label for="html" class="product-name">Doesn't switch on</label>
-            </button>
-            <!-- End of desktop radio -->
-
-        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs7kEuHJSR2KtOUO6EkAcMrZy8Wo-Fi4We8k3RUOzY4z_kNw/viewform?embedded=true" 
+        frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[460px]">
+        Loading…
+        </iframe>
         
       </div>
-      <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg flex flex-col md:ml-auto w-full md:p-6 mt-8 md:mt-0">
-        <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Device defects</h4>
-        <div class="cart"></div>           
+      <div class="lg:w-1/3 md:w-1/2 bg-white shadow-md rounded-lg flex flex-col md:ml-4 w-full md:p-6 mt-8 md:mt-0">
+        <img src="../img/tv-3.jpg" alt="">         
       </div>
     </div>
   </section>
-<!-- End of body section 1 -->
+<!-- End of desktop google form -->
+
+<!-- Mobile google form -->
+<img src="../img/tv-min-webp.webp" alt="Mobile TV image" class="mob-tv">
+<section class="flex items-center bg-gray-100 text-gray-600 body-font relative mob-form">
+    <div class="container px-4 py-4 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="w-full bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden p-4 relative">
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs7kEuHJSR2KtOUO6EkAcMrZy8Wo-Fi4We8k3RUOzY4z_kNw/viewform?embedded=true" 
+        frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[500px]">
+        Loading…
+        </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!-- End of mobile google form -->
 
 </div>
 
@@ -336,7 +319,7 @@
       <div class="lg:flex">
           <div class="w-full lg:w-2/5">
               <div class="px-6">
-                  <div>
+                  <div class="flex justify-center">
                     <a class="flex title-font font-medium items-end text-gray-900 p-0">
                       <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
                     </a>
@@ -423,7 +406,7 @@
 <script>
     "use strict";                        
     let cart = [];
-    let cartTotal = 0;
+    //let cartTotal = 0;
     const cartDom = document.querySelector(".cart");
     const addtocartbtnDom = document.querySelectorAll('[data-action="add-to-cart"]');
     
@@ -433,6 +416,7 @@
         const product = {
           name: productDom.querySelector(".product-name").innerText,
        };
+       //console.log(product);
     
     const IsinCart = cart.filter(cartItem => cartItem.name === product.name).length > 0;
     if (IsinCart === false) {
@@ -458,9 +442,8 @@
             </div>
           </div>`); }
     
-        addtocartbtnDom.innerHTML = `<input type="radio" id="ans2" class="-ml-[118.4px] lg:-ml-0 mt-10 lg:mt-0 text-bintek-green" name="fav_language" value="No" checked>
-                <label for="html" class="product-name">Answered</label>`;
-        addtocartbtnDom.disabled = true;
+        addtocartbtnDom.innerText = "2In list";
+        addtocartbtnDom.disabled = false;
         cart.push(product);
     
         const cartItemsDom = cartDom.querySelectorAll(".cart-items");
@@ -472,9 +455,9 @@
           cartItemDom.querySelector('[data-action="remove-item"]').addEventListener("click", () => {
             cart.forEach(cartItem => {
               if (cartItem.name === product.name) {
-                  cartItemDom.remove();
+                  //cartItemDom.remove();
                   cart = cart.filter(cartItem => cartItem.name !== product.name);
-                  addtocartbtnDom.innerText = product.name;
+                  addtocartbtnDom.innerText = "<br/>1In list";
                   addtocartbtnDom.disabled = false;
               }
               if(cart.length < 1){

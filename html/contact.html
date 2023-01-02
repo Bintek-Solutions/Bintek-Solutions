@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact Us</title>
     
     <link href="../output.css" rel="stylesheet">
     <link href="../css/desktop.css" rel="stylesheet">
@@ -18,6 +18,14 @@
 </head>
 <body>
 
+<script type="text/javascript">
+    var submitted=false
+</script>
+
+<iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
+onload="if(submitted){window.location='about.html';}">
+</iframe>
+
 <!--Desktop nav and banner  -->
 <section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-full bg-[url('../img/about-page-banner-3-01.png')] deskie abt">
   <header class="text-bintek-green body-font">
@@ -28,20 +36,10 @@
       <nav class="w-1/2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mt-12">
         <!-- Desktop nav menu -->
         <ul class="hidden md:flex space-x-6">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products & Services</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <!-- <li class="flex relative group">
-            <a href="#" class="mr-1">Services</a> 
-            <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
-             Submenu starts 
-            <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-              <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">E-waste recycling</a></li>
-              <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Electronics repair</a></li>
-            </ul>
-             Submenu ends
-          </li> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products & Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <!-- End of desktop nav menu -->
       </nav>
@@ -62,8 +60,8 @@
   <section class="text-gray-600 body-font pg-ban-txt">
     <div class="container">
       <div class="text-left mt-8">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-blue mb-4">About Bintek Solutions</h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-white">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-blue mb-4">Contact Us</h1>
+        <p class="text-base md:text-xl leading-relaxed xl:w-2/4 lg:w-3/4 text-white">Feel free to reach out to us</p>
         <div class="flex mt-6 justify-start">
           <div class="w-20 h-1 rounded-full bg-bintek-green inline-flex"></div>
         </div>
@@ -113,7 +111,14 @@
                 </div>
     
                 <div class="relative mt-4 md:mt-0">
-                  <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mt-5 mb-2 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="step-2.html">Get Quote</a></button>
+                    <!-- <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span> -->
+    
+                    <!-- <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+                    <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mt-5 mb-2 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="step-2.html">Get Quote</a></button>
                 </div>
             </div>
         </div>
@@ -125,8 +130,8 @@
   <section class="mt-10 text-gray-600 body-font">
     <div class="container px-5 mx-auto">
       <div class="text-left mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-green mb-4">About Bintek Solutions</h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-green mb-4">Contact Us</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">Feel free to reach out to us</p>
         <div class="flex mt-6 justify-start">
           <div class="w-16 h-1 rounded-full bg-bintek-green inline-flex"></div>
         </div>
@@ -138,183 +143,141 @@
 </section>
 <!-- End of mobile nav and banner  -->
 
+
 <div class="body-cont">
 
-<!-- Body section 1 -->
-<section class="text-gray-600 body-font bg-gray-200">
-  <div class="container px-5 py mx-auto flex flex-col">
-    <div class="lg:w-full mx-auto">
-      <div class="flex flex-col sm:flex-row mt-4">
-        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Bernard Mucui</h2>
-            <div class="w-12 h-1 bg-bintek-green rounded mt-2 mb-4"></div>
-            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
-            <a class="text-bintek-green inline-flex items-center mt-3">LinkedIn Profile
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        
-        <br>
-          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Nicholas Kurgat</h2>
-            <div class="w-12 h-1 bg-bintek-green rounded mt-2 mb-4"></div>
-            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
-            <a class="text-bintek-green inline-flex items-center mt-3">LinkedIn Profile
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <section class="text-gray-600 body-font">
-            <div class="container px-5 py-5 mx-auto">
-              <div class="flex flex-col">
-                <div class="flex justify-center mb-2 lg:justify-start lg:mb-0 h-1 bg-gray-200 rounded overflow-hidden">
-                  <div class="w-24 h-full bg-bintek-green"></div>
-                </div>
-                <div class="flex flex-wrap sm:flex-row flex-col">
-                  <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-                  <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-                </div>
-              </div>
-              <div class="flex flex-wrap sm:my-4 sm:-mx-4 -mx-4 mt-4">
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                  <div class="rounded-lg h-48 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
-                  </div>
-                  <h2 class="text-xl font-medium title-font text-[#599da6] mt-5">Shooting Stars</h2>
-                  <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                  <div class="rounded-lg h-48 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
-                  </div>
-                  <h2 class="text-xl font-medium title-font text-[#599da6] mt-5">The Catalyzer</h2>
-                  <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                </div>
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                  <div class="rounded-lg h-48 overflow-hidden">
-                    <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-                  </div>
-                  <h2 class="text-xl font-medium title-font text-[#599da6] mt-5">The 400 Blows</h2>
-                  <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                </div>
-              </div>
+<!-- Desktop Body section 1 -->
+<section class="text-gray-600 body-font relative desk-cont mx-4">
+    <div class="container px-5 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-center relative">
+        <img width="100%" height="100%" class="absolute inset-0" src="../img/contact-webp.webp">
+        <div class="bg-white relative flex flex-wrap justify-center py-6 px-6 md:pr-16 rounded shadow-md">
+          <div class="lg:w-1/2 pr-2">
+            <h2 class="text-center title-font font-semibold text-gray-900 tracking-widest text-xs">SOCIAL MEDIA</h2>
+            <div class="flex justify-center mt-2 ">
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="Facebook">
+                    <img src="../img/fb2.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
+            
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="LinkedIn">
+                    <img src="../img/in3.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
+            
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="Twitter">
+                    <img src="../img/twitter2.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
             </div>
-          </section>
+            <h2 class="mt-4 text-center title-font font-semibold text-gray-900 tracking-widest text-xs">LOCATION</h2>
+            <p class="text-bintek-green text-center leading-relaxed">Fedha estate, <br> Outering Road, <br> Nairobi</p>
+          </div>
+          <div class="lg:w-1/2 pl mt-4 lg:mt-0 text-center">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+            <a href="mailto:binteksolutions@gmail.com" class="text-bintek-green text-xs md:text-base leading-relaxed">binteksolutions@gmail.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+            <a href="tel:+254716576008" class="text-bintek-green leading-relaxed">+254716576008</a>
+          </div>
         </div>
+      </div>
+      <div class="lg:w-1/3 md:w-1/2 bg-gray-200 flex flex-col md:ml-auto w-full md:py-8 px-8 mt-8 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
+        method="post" target="hiddenConfirm" onsubmit="submitted=true">
+            <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600">Full name</label>
+            <input type="text" id="fname" name="entry.1245089180" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="entry.1479085348" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+                <label for="pno" class="leading-7 text-sm text-gray-600">Phone number</label>
+                <input type="phone" id="phone" name="entry.531134056" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="entry.604609754" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-bintek-green border-0 pt-4 pb-2 px-6 mx-auto focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg">Submit</button>
+        </form>
       </div>
     </div>
-  </div>
 </section>
-<!-- End of body section 2 -->
+<!-- End of desktop body section 1 -->
 
-<!-- Body section 2 -->
-<section class="text-center bg-white dark:bg-gray-900">
-  <div class="container px-6 py-10 mx-auto">
-      <div class="lg:flex lg:items-center">
-          <div class="w-full space-y-12 lg:w-1/2 ">
-              <div>
-                  <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">explore our <br> awesome Components</h1>
-
-                  <div class="mt-2">
-                      <span class="inline-block w-40 h-1 bg-bintek-green rounded-full"></span>
-                      <span class="inline-block w-3 h-1 ml-1 bg-bintek-green rounded-full"></span>
-                      <span class="inline-block w-1 h-1 ml-1 bg-bintek-green rounded-full"></span>
-                  </div>
-              </div>
-
-              <div class="md:flex md:items-start md:-mx-4">
-                  <span class="inline-block p-2 text-blue-100 bg-bintek-green rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                      </svg>
-                  </span>
-
-                  <div class="mt-4 md:mx-4 md:mt-0">
-                      <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Copy & paste components</h1>
-
-                      <p class="mt-3 text-gray-500 dark:text-gray-300">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
-                      </p>
-                  </div>
-              </div>
-
-              <div class="md:flex md:items-start md:-mx-4">
-                  <span class="inline-block p-2 text-blue-100 bg-bintek-green rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                      </svg>
-                  </span>
-
-                  <div class="mt-4 md:mx-4 md:mt-0">
-                      <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">Zero Configrations</h1>
-
-                      <p class="mt-3 text-gray-500 dark:text-gray-300">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
-                      </p>
-                  </div>
-              </div>
-
-              <div class="md:flex md:items-start md:-mx-4">
-                  <span class="inline-block p-2 text-blue-100 bg-bintek-green rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-                      </svg>
-                  </span>
-
-                  <div class="mt-4 md:mx-4 md:mt-0">
-                      <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">elegant Dark Mode</h1>
-
-                      <p class="mt-3 text-gray-500 dark:text-gray-300">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
-              <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" alt="">
-          </div>
+<!-- Mobile Body section 1 -->
+<section class="flex justify-center text-gray-600 body-font relative mobi-cont">
+    <div class="container flex justify-center px-5 py-6 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-center relative">
+        <img width="100%" height="100%" class="absolute inset-0" src="../img/contact-webp.webp">
+        <div class="bg-white relative flex flex-wrap justify-center py-6 px-6 rounded shadow-md">
+          <div class="lg:w-1/2 pr-2">
+            <h2 class="text-center title-font font-semibold text-gray-900 tracking-widest text-xs">SOCIAL MEDIA</h2>
+            <div class="flex justify-center mt-2 ">
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="Facebook">
+                    <img src="../img/fb2.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
+            
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="LinkedIn">
+                    <img src="../img/in3.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
+            
+                <a href="#"
+                    class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                    aria-label="Twitter">
+                    <img src="../img/twitter2.svg" width="20px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                </a>
+            </div>
+            <h2 class="mt-4 text-center title-font font-semibold text-gray-900 tracking-widest text-xs">LOCATION</h2>
+            <p class="text-bintek-green text-center leading-relaxed">Fedha estate, <br> Outering Road, <br> Nairobi</p>
+            <div class="lg:w-1/2 pl mt-4 lg:mt-0 text-center">
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                <a href="mailto:binteksolutions@gmail.com" class="text-bintek-green text-xs md:text-base leading-relaxed">binteksolutions@gmail.com</a>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                <a href="tel:+254716576008" class="text-bintek-green leading-relaxed">+254716576008</a>
+            </div>
+        </div>
+        </div>
       </div>
-
-      <hr class="my-12 border-gray-200 dark:border-gray-700">
-
-  </div>
+      <div class="w-3/4 lg:w-1/3 md:w-1/2 bg-gray-200 shadow-lg border rounded px-6 py-6 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdw7B_-FbbzPw-rU4tClLfWZNIK1HwywYqh3BDo7gVJcYtlg/formResponse"
+        method="post" target="hiddenConfirm" onsubmit="submitted=true">
+            <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600">Full name</label>
+            <input type="text" id="fname" name="entry.1245089180" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="entry.1479085348" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+                <label for="pno" class="leading-7 text-sm text-gray-600">Phone number</label>
+                <input type="phone" id="phone" name="entry.531134056" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="entry.604609754" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-bintek-green border-0 pt-4 pb-2 px-6 mx-auto focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg">Submit</button>
+       </form>
+      </div>
+    </div>
 </section>
-<!-- End of body section 2 --> 
-  
-<!-- Body section 3 -->
-<!-- <section class="text-gray-600 body-font">
-  <div class="container px-5 pt-16 mx-auto">
-    <div class="flex flex-col text-center w-full mb-8">
-      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Master Cleanse Reliac Heirloom</h1>
-    </div>    
-  </div>
-</section> -->
-<!-- End of body section 3 -->
+<!-- End of mobile body section 1 -->
 
-<!-- Body section 4 -->
-
-<!-- End of body section 4 -->
 </div>
 
 <!-- Desktop footer -->
@@ -471,6 +434,7 @@
 </footer>
 <!-- End of mobile footer -->
 
+<script src="../js/main.js"></script>
 <script src="../js/nav-menu.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>

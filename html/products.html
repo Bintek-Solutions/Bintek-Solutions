@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    
+    <link href="../output.css" rel="stylesheet">
+    <link href="../css/desktop.css" rel="stylesheet">
+    <link href="../css/mobile.css" rel="stylesheet">
+    <link href="../css/sm-tab.css" rel="stylesheet">
+    <link href="../css/lg-tab.css" rel="stylesheet">
+
+    <style>
+      [x-cloak] { display: none; }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+    var submitted=false
+</script>
+
+<iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
+onload="if(submitted){window.location='about.html';}">
+</iframe>
+
+<!--Desktop nav and banner  -->
+<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-full bg-[url('../img/about-page-banner-3-01.png')] deskie abt">
+  <header class="text-bintek-green body-font">
+    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-start">
+      <a class="flex title-font font-medium items-end text-gray-900 -ml-8 p-0">
+        <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
+      </a>
+      <nav class="w-1/2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mt-12">
+        <!-- Desktop nav menu -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products & Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- End of desktop nav menu -->
+      </nav>
+      <div class="relative mt-8 md:ml-auto">
+        <!-- <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+            <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </span>
+
+        <input type="text" class="w-44 py-2 pl-10 pr-4 mr-8 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+        <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mr-12 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="step-2.html">Get Quote</a></button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Text on banner -->
+  <section class="text-gray-600 body-font pg-ban-txt">
+    <div class="container">
+      <div class="text-left mt-8">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-blue mb-4">Explore our products and services</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-white">Want to buy something or find out more?</p>
+        <div class="flex mt-6 justify-start">
+          <div class="w-20 h-1 rounded-full bg-bintek-green inline-flex"></div>
+        </div>
+        <div class="inline-flex w-full mt-6 sm:w-auto">
+          <a href="#" class="inline-flex items-center justify-center w-48 px-6 py-2 text-sm text-white duration-300 bg-gray-600 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+              Get in touch <img src="https://img.icons8.com/material/24/7ab24a/long-arrow-right--v2.png" class="ml-2"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of text on banner -->
+
+</section>
+<!-- End of desktop nav and banner  -->      
+
+<!-- Mobile nav and banner  -->
+<section class="bg-no-repeat bg-center bg-top text-gray-600 body-font w-screen bg-[url('../img/bin-abt-mobile-01.png')] mobi abt-mob">
+  <header class="text-bintek-green body-font">
+    <div class="container mx-auto flex items-stretch flex-wrap flex-col flex-row">
+
+      <nav x-cloak x-data="{ isOpen: false }" class="relative">
+        <div class="container pl-2 pr-4 mx-auto md:flex">
+            <div class="flex items-center justify-between">
+                <div>
+                  <a class="flex title-font font-medium items-end text-gray-900 -ml-8 p-0">
+                    <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-44 m-0 p-0">
+                  </a>
+                </div>
+    
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button" class="text-bintek-green dark:text-gray-100 hover:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:text-gray-300 dark:focus:text-gray-200" aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+                
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
+                <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
+                  <a href="../index.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Home</a>
+                  <a href="about.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">About</a>
+                  <a href="products.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Products & Services</a>
+                  <a href="contact.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Contact Us</a>
+                </div>
+    
+                <div class="relative mt-4 md:mt-0">
+    
+                    <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mt-5 mb-2 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="step-2.html">Get Quote</a></button>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Text on banner -->
+  <section class="mt-6 text-gray-600 body-font">
+    <div class="container px-5 mx-auto">
+      <div class="text-left mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-bintek-green mb-4">Explore our products and services</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">Want to buy something or find out more?</p>
+        <div class="flex mt-6 justify-start">
+          <div class="w-16 h-1 rounded-full bg-bintek-green inline-flex"></div>
+        </div>
+        <div class="inline-flex w-full mt-6 sm:w-auto">
+          <a href="#" class="inline-flex items-center justify-center w-48 px-6 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+              Get in touch <img src="https://img.icons8.com/material/24/7ab24a/long-arrow-right--v2.png" class="ml-2"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of text on banner -->
+
+</section>
+<!-- End of mobile nav and banner  -->
+
+  <!-- CTA 1 -->
+  <!-- <section class="bg-gray-100 dark:bg-gray-800 lg:py-12 lg:flex lg:justify-center">
+    <div
+        class="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
+
+        <div class="bg-gray-200 sm:bg-white max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-white md:text-2xl">
+              Check out our products/services below
+            </h2>
+
+             <p class="text-base mt-4 text-gray-500 dark:text-gray-300">
+              Curabitur sapien quam, luctus id lectus non, cursus mollis mauris. Pellentesque id malesuada massa.
+            </p>
+
+            <h2 class="text-base text-gray-800 dark:text-white">
+                <span class="text-bintek-green">Want to buy something or find out more?</span>
+            </h2>
+
+            <div class="inline-flex w-full mt-6 sm:w-auto">
+                <a href="#" class="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                    Get in touch <img src="https://img.icons8.com/material/24/7ab24a/long-arrow-right--v2.png" class="ml-2"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section> -->
+  <!-- End of CTA 1 -->
+
+  <!-- Body section 2 -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 pt-8 pb-4 mx-auto">
+      <div class="flex flex-col text-center w-full mb-4">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Products</h1>
+      </div>    
+    </div>
+  </section>
+  <!-- End of body section 2 -->
+
+  <!-- Products -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 pb-4 mb-6 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+                    
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Products -->
+
+  <!-- Body section 4 -->
+  <section class="bg-gray-200 text-gray-600 body-font">
+    <div class="container px-5 pt-8 pb-4 mx-auto">
+      <div class="flex flex-col text-center w-full">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Services</h1>
+      </div>    
+    </div>
+  </section>
+  <!-- End of body section 4 -->
+
+  <!-- Services -->
+  <section class="bg-gray-200 text-gray-600 body-font">
+    <div class="container px-5 pb-6 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+                    
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"></div>
+            
+                <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-48 dark:bg-gray-800">
+            
+                    <div class="flex items-center justify-center px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-bintek-green uppercase dark:text-white">Samsung</h3>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Services -->
+
+  <!-- Banner features -->
+  <!-- <section class="bg-gray-300 text-gray-600 pt-4 pb-16 body-font -mt-20 h-full">
+    <div class="container px-5 mx-auto">
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-28 px-4 pt-4 mt-2 border-l border-white border-opacity-80 flex items-center">
+          <div>
+          <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Shooting Stars</h2>
+          <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-28 px-4 pt-4 mt-8 border-l border-white border-opacity-80 flex items-center">
+          <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">The Catalyzer</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-28 h-28 px-4 pt-4 mt-8 border-l border-white border-opacity-80 flex items-center">
+          <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Neptune</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full h-28 h-28 px-4 pt-4 mt-8 border-l border-white border-opacity-80 flex items-center">
+          <div>
+            <h2 class="text-base sm:text-base text-light-bintek-blue font-medium title-font mb-2">Melanchole</h2>
+            <p class="leading-relaxed text-sm mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End of banner features -->
+
+
+<!-- End of mobile nav and banner  -->
+
+<div class="body-cont">
+
+<!-- Body section 1 -->
+
+<!-- End of body section 1 -->
+
+<!-- Body section 2 -->
+
+<!-- End of body section 2 -->
+
+<!-- Body section 3 -->
+
+<!-- End of body section 3 -->
+
+<!-- Body section 4 -->
+
+<!-- End of body section 4 -->
+</div>
+
+<!-- Desktop footer -->
+<footer class="bg-white text-bintek-green w-full deskie-footer">
+  <div class="container p-6 mx-auto">
+      <div class="lg:flex">
+          <div class="w-full -mx-6 lg:w-2/5">
+              <div class="px-6">
+                  <div>
+                    <a class="flex title-font font-medium items-end text-gray-900 mr-4 p-0">
+                      <img src="../img/bintek-logo-trans-footer.png" alt="Bintek logo" class="w-28 m-0 p-0">
+                    </a>
+                  </div>
+
+                  <p class="max-w-sm mt-2 text-bintek-blue dark:text-bintek-blue">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
+
+         
+              </div>
+          </div>
+
+          <div class="mt-6 lg:mt-0 lg:flex-1">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div>
+                    <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">QUICK LINKS</h3>
+                    <a href="../index.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Home</a>
+                    <a href="about.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">About</a>
+                    <a href="products.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Products & Services</a>
+                </div>
+
+
+
+                  <!-- <div>
+                      <h3 class="text-bintek-blue uppercase dark:text-white">Products</h3>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Product 1</a>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Product 2</a>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Product 3</a>
+                  </div>
+
+                  <div>
+                      <h3 class="text-bintek-blue uppercase dark:text-white">Resources</h3>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Terms and Conditions</a>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Privacy Policy</a>
+                  </div> -->
+
+                  <div>
+                    <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">Contacts</h3>
+                    <a href="contact.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Contact Us</a>
+                    <span class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline"><a href="tel:+254716576008">+254716576008</a></span>
+                    <span class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline"><a href="mailto:binteksolutions@gmail.com">binteksolutions@gmail.com</a></span>
+                  </div>
+
+                  <div class="ml-8">
+                    <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">SOCIAL MEDIA</h3>
+                    <div class="flex mt-2 -mx-2">
+                        <a href="#"
+                            class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                            aria-label="Facebook">
+                            <img src="../img/fb2.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                        </a>
+                    
+                        <a href="#"
+                            class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                            aria-label="LinkedIn">
+                            <img src="../img/in3.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                        </a>
+                    
+                        <a href="#"
+                            class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                            aria-label="Twitter">
+                            <img src="../img/twitter2.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
+
+      <div>
+          <p class="text-center text-bintek-blue dark:text-bintek-blue">© Bintek Solutions 2023 - All rights reserved</p>
+      </div>
+  </div>
+</footer>
+<!-- End of desktop footer -->
+
+<!-- Mobile footer -->
+<footer class="bg-white dark:bg-gray-900 flex items-center text-center justify-items-center mobi-footer">
+  <div class="container px-6 pb-6 mx-auto">
+      <div class="lg:flex">
+          <div class="w-full lg:w-2/5">
+              <div class="px-6">
+                  <div class="flex justify-center">
+                    <a class="flex title-font font-medium items-end text-gray-900 p-0">
+                      <img src="../img/bintek-logo-trans.png" alt="Bintek logo" class="w-64 m-0 p-0">
+                    </a>
+                  </div>
+
+                  <p class="max-w-sm mt-2 text-bintek-blue dark:text-bintek-blue">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
+
+                  <div class="flex justify-center mt-4 -mx-2">
+                    <a href="#"
+                        class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                        aria-label="Facebook">
+                        <img src="../img/fb2.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                    </a>
+                
+                    <a href="#"
+                        class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                        aria-label="LinkedIn">
+                        <img src="../img/in3.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                    </a>
+                
+                    <a href="#"
+                        class="mx-2 text-bintek-green transition-colors duration-300 dark:text-bintek-blue link-hover"
+                        aria-label="Twitter">
+                        <img src="../img/twitter2.svg" width="30px" class="rounded-full bg-bintek-green hover:bg-gray-400"/>
+                    </a>
+                </div>
+              </div>
+          </div>
+
+          <div class="mt-6 lg:mt-0 lg:flex-1">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                  <div>
+                      <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">QUICK LINKS</h3>
+                      <a href="../index.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Home</a>
+                      <a href="about.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">About</a>
+                      <a href="products.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Products & Services</a>
+                  </div>
+
+                  <!-- <div>
+                      <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">Resources</h3>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Terms and Conditions</a>
+                      <a href="#" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Privacy Policy</a>
+                  </div> -->
+
+                  <div>
+                      <h3 class="text-bintek-blue uppercase dark:text-bintek-blue">Contacts</h3>
+                      <a href="contact.html" class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline">Contact Us</a>
+                      <span class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline"><a href="tel:+254716576008">+254716576008</a></span>
+                      <span class="block mt-2 text-sm text-bintek-green link-hover dark:text-gray-400 hover:underline"><a href="mailto:binteksolutions@gmail.com">binteksolutions@gmail.com</a></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
+
+      <div>
+          <p class="text-center text-bintek-blue dark:text-bintek-blue">© Bintek Solutions 2023 <br> All rights reserved</p>
+      </div>
+  </div>
+</footer>
+<!-- End of mobile footer -->
+
+<script src="../js/main.js"></script>
+<script src="../js/nav-menu.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

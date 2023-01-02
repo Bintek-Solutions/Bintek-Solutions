@@ -72,7 +72,7 @@ section.abt {
 
 .pg-ban-txt {
     padding-left: 35px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .sw-des {
@@ -81,4 +81,24 @@ section.abt {
 
 .sw-mob {
     display: none;
+}
+
+.des-form {
+    display: block !important;
+}
+
+.mob-form {
+    display: none !important;
+}
+
+.mob-tv {
+    display: none;
+}
+
+.mobi-cont {
+    display: none !important;
+}
+
+.desk-cont {
+    display: block !important;
 }
