@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Get Quote</title>
     
     <link href="../output.css" rel="stylesheet">
     <link href="../css/desktop.css" rel="stylesheet">
@@ -41,50 +41,22 @@
         <nav class="w-1/2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mt-12">
            <!-- Desktop nav menu -->
           <ul class="hidden md:flex space-x-6">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="flex relative group">
-              <a href="#" class="mr-1">Services</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
-              <!-- Submenu starts -->
-              <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">E-waste recycling</a></li>
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Electronics repair</a></li>
-              </ul>
-              <!-- Submenu ends -->
-            </li>
-            <li class="flex relative group">
-              <a href="#" class="mr-1">Products</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
-              <!-- Submenu starts -->
-              <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Batteries</a></li>
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Solar panels</a></li>
-              </ul>
-              <!-- Submenu ends -->
-            </li>
-            <li class="flex relative group">
-              <a href="#" class="mr-1">Projects</a> 
-              <img src="../css/icons/chev-down-30-svg.svg" alt="Chevron down icon" class="w-[12px] mt-1 p-0">
-              <!-- Submenu starts -->
-              <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Project 1</a></li>
-                <li class="text-sm hover:bg-slate-100 leading-8"><a href="#">Project 2</a></li>
-              </ul>
-              <!-- Submenu ends -->
-            </li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products & Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <!-- End of desktop nav menu -->
         </nav>
         <div class="relative mt-8 md:ml-auto">
-          <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+          <!-- <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
                   <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
           </span>
 
-          <input type="text" class="w-44 py-2 pl-10 pr-4 mr-8 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
+          <input type="text" class="w-44 py-2 pl-10 pr-4 mr-8 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+          <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mr-12 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="html/step-2.html">Get Quote</a></button>
         </div>
       </div>
     </header>
@@ -124,19 +96,21 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
                 <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
-                    <a href="#" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Home</a>
-                    <a href="#" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">About</a>
-                    <a href="#" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Contact</a>
+                  <a href="../index.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Home</a>
+                  <a href="about.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">About</a>
+                  <a href="products.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Products & Services</a>
+                  <a href="contact.html" class="px-2.5 py-2 text-bintek-green mobi-menu transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2">Contact Us</a>
                 </div>
     
                 <div class="relative mt-4 md:mt-0">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                        <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </span>
-    
-                    <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
+                  <!-- <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                      <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                          <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </span> -->
+  
+                  <!-- <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-bintek-blue dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+                  <button class="flex items-center text-white bg-[#127480] border-0 py-2 px-6 mt-5 mb-2 focus:outline-none hover:bg-gray-700 hover:text-gray-300 rounded text-lg" type="button"> <a href="html/step-2.html">Get Quote</a></button>
                 </div>
             </div>
         </div>
